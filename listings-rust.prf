@@ -3,15 +3,22 @@
 \usepackage{xcolor}
 \usepackage{textcomp}
 
-%% Actual colors from idlelib/config-highlight.def --> corrected to ``web-safe''
-%% strings  = #00aa00 / 0,170,0      (a darker green)
-%% builtins = #900090 / 144,0,144    (purple-ish)
-%% keywords = #FF7700 / 255,119,0    (quite close to plain `orange')
-%% Corrected to ``web-safe''
-\definecolor{rs-yellow}{RGB}{153,153,0}
-\definecolor{rs-blue}{RGB}{64,64,153}
-\definecolor{rs-red}{RGB}{153,0,0}
-\definecolor{rs-green}{RGB}{0,64,0}
+\definecolor{rs-base03}{RGB}{28, 28, 28}
+\definecolor{rs-base02}{RGB}{38, 38, 38}
+\definecolor{rs-base01}{RGB}{78, 78, 78}
+\definecolor{rs-base00}{RGB}{88, 88, 88}
+\definecolor{rs-base0}{RGB}{128, 128, 128}
+\definecolor{rs-base1}{RGB}{138, 138, 138}
+\definecolor{rs-base2}{RGB}{215, 215, 175}
+\definecolor{rs-base3}{RGB}{255, 255, 215}
+\definecolor{rs-yellow}{RGB}{175, 135, 0}
+\definecolor{rs-orange}{RGB}{215, 95, 0}
+\definecolor{rs-red}{RGB}{215, 0, 0}
+\definecolor{rs-magenta}{RGB}{175, 0, 95}
+\definecolor{rs-violet}{RGB}{95, 95, 175}
+\definecolor{rs-blue}{RGB}{0, 135, 255}
+\definecolor{rs-cyan}{RGB}{0, 175, 175}
+\definecolor{rs-green}{RGB}{95, 135, 0}
 
 \lstdefinestyle{rust-code}{%
   language=Rust,                   % the language
