@@ -1,0 +1,17 @@
+\ProvidesFile{lstlang4.sty}
+    [2018/06/13 1.0 listings language file]
+
+\lst@definelanguage{Rust}
+                   {morekeywords={as,break,const,continue,crate,else,enum,extern,false,
+                       fn,for,if,impl,in,let,loop,match,mod,move,mut,pub,ref,return,Self,
+                       self,static,struct,super,trait,true,type,unsafe,use,where,while,
+                       abstract,alignof,become,box,do,final,macro,offsetof,override,priv,
+                       proc,pure,sizeof,typeof,unsized,virtual,yield},
+                     % primitive type                    
+                     morekeywords=[2]{isize,usize,char,bool,str,u8,u16,u32,u64,u128,i8,i16,i32,i64,i128,f32,f64},
+                     sensitive=true,
+                     morecomment=[l]{//},
+                     morecomment=[l]{///}, % change color
+                     morestring=[b]{"},
+                   }%
+\endinput

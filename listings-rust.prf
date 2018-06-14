@@ -1,0 +1,25 @@
+\ProvidesFile{listings-rust.prf}
+    [2018/06/13 1.0 listings language file]
+\usepackage{xcolor}
+\usepackage{textcomp}
+
+%% Actual colors from idlelib/config-highlight.def --> corrected to ``web-safe''
+%% strings  = #00aa00 / 0,170,0      (a darker green)
+%% builtins = #900090 / 144,0,144    (purple-ish)
+%% keywords = #FF7700 / 255,119,0    (quite close to plain `orange')
+%% Corrected to ``web-safe''
+\definecolor{rs-yellow}{RGB}{153,153,0}
+\definecolor{rs-blue}{RGB}{64,64,153}
+\definecolor{rs-red}{RGB}{153,0,0}
+\definecolor{rs-green}{RGB}{0,64,0}
+
+\lstdefinestyle{rust-code}{%
+  language=Rust,                   % the language
+  basicstyle=\normalsize\ttfamily,   % size of the fonts for the code
+  keywordstyle=\color{rs-yellow},       % core keywords
+  keywordstyle={[2]\color{rs-blue}}, % built-ins
+  stringstyle=\color{rs-red},
+  commentstyle=\color{rs-green},
+  upquote=true,                      % requires textcomp
+}
+\endinput
